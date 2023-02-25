@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+    <title>easySSH</title>
+</head>
+<body>
+    <h1>
+        <a>easySSH</a>
+        <a>not connected</a>
+        <button>?</button>
+        <button style="--accent: red;">X</button>
+    </h1>
+    <div>
+        <input placeholder="host *" name="host" type="text"/>
+        <sub>Example: 11.22.33.444 or hostname.com</sub>
+        <input placeholder="port" name="port" type="number"/>
+        <sub>Example: 444, 400, 100, etc. leave empty for default</sub>
+        <input placeholder="username *" name="username" type="text"/>
+        <input placeholder="password" name="password" type="password"/>
+        <h2>additional options: </h2>
+        <ul>
+            <li>
+                <input type="text" value="-d"/>
+                <button>X</button>
+            </li>
+            <li>
+                <input type="text" value="-C"/>
+                <button>X</button>
+            </li>
+            
+            <button id="add">Add</button>
+        </ul>
+        <button type="submit" id="connect"></button>
+    </div>
+</body>
+</html>
